@@ -1,10 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { ReactNode } from 'react';
-import Base64Tool from '@/components/Base64Tool';
-import { TemperatureTool, UnitConverterTool } from '@/components/Converters';
-import JsonTool from '@/components/JsonTool';
-import { ClothingSizeTool, ShoeSizeTool } from '@/components/SizeTools';
+import { FreelancerCalculator, OvertimeCalculator, SalaryCalculator, SalaryTable, SeveranceCalculator } from '@/components/Calculators';
 import ToolPage from '@/components/ToolPage';
 import { getTool, TOOLS } from '@/data/tools';
 import { SITE_NAME } from '@/lib/site';
@@ -42,22 +39,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 function renderTool(slug: string): ReactNode {
   switch (slug) {
-    case 'area':
-      return <UnitConverterTool category="area" />;
-    case 'length':
-      return <UnitConverterTool category="length" />;
-    case 'weight':
-      return <UnitConverterTool category="weight" />;
-    case 'temperature':
-      return <TemperatureTool />;
-    case 'shoe-size':
-      return <ShoeSizeTool />;
-    case 'clothing-size':
-      return <ClothingSizeTool />;
-    case 'base64':
-      return <Base64Tool />;
-    case 'json-formatter':
-      return <JsonTool />;
+    case 'salary':
+      return <SalaryCalculator />;
+    case 'freelancer':
+      return <FreelancerCalculator />;
+    case 'severance':
+      return <SeveranceCalculator />;
+    case 'overtime':
+      return <OvertimeCalculator />;
+    case 'salary-table-2026':
+      return <SalaryTable />;
     default:
       return null;
   }

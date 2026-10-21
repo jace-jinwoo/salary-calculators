@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 import AdSlot from './AdSlot';
+import DataStatusTable from './DataStatusTable';
 import JsonLd from './JsonLd';
 import { getTool, type ToolMeta } from '@/data/tools';
 import { absoluteUrl, SITE_NAME } from '@/lib/site';
@@ -49,7 +50,7 @@ export default function ToolPage({ meta, children }: { meta: ToolMeta; children:
       <p className="mt-2 text-gray-600">{meta.shortDescription}</p>
 
       <section aria-labelledby="tool-heading" className="mt-6">
-        <h2 id="tool-heading" className="sr-only">변환 도구</h2>
+        <h2 id="tool-heading" className="sr-only">계산 도구</h2>
         {children}
       </section>
 
@@ -113,6 +114,8 @@ export default function ToolPage({ meta, children }: { meta: ToolMeta; children:
           출처 링크는 일반 참고 경로이며, 법령·표준은 개정될 수 있으므로 중요한 판단 전에는 원문을 직접 확인하세요.
         </p>
       </section>
+
+      <DataStatusTable tool={meta.slug} />
 
       <AdSlot placement="content" />
 

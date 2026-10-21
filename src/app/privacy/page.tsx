@@ -21,7 +21,7 @@ export default function PrivacyPage() {
       <section>
         <h2 className="text-xl font-semibold text-gray-900">1. 수집하는 개인정보</h2>
         <p className="mt-2">
-          {SITE_NAME}는 회원가입과 로그인 기능이 없으며, 이름·연락처 등 개인정보를 직접 수집하지 않습니다. 도구에 입력한 값(숫자, 텍스트, Base64, JSON 등)은 방문자의 브라우저 안에서만 처리되며 서버로 전송되거나 저장되지 않습니다.
+          {SITE_NAME}는 회원가입과 로그인 기능이 없으며, 이름·연락처 등 개인정보를 직접 수집하지 않습니다. 도구에 입력한 값(급여·근무 정보 등)은 방문자의 브라우저 안에서만 처리되며 서버로 전송되거나 저장되지 않습니다.
         </p>
       </section>
 

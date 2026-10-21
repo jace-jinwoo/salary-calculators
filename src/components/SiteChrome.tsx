@@ -12,8 +12,8 @@ export function SiteHeader() {
         <nav aria-label="주요 메뉴">
           <ul className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
             <li><Link href="/" className="text-gray-700 hover:text-brand-700">홈</Link></li>
-            <li><Link href="/area/" className="text-gray-700 hover:text-brand-700">평↔㎡</Link></li>
-            <li><Link href="/json-formatter/" className="text-gray-700 hover:text-brand-700">JSON</Link></li>
+            <li><Link href="/salary/" className="text-gray-700 hover:text-brand-700">실수령액</Link></li>
+            <li><Link href="/severance/" className="text-gray-700 hover:text-brand-700">퇴직금</Link></li>
             <li><Link href="/guide/" className="text-gray-700 hover:text-brand-700">이용 안내</Link></li>
             <li><Link href="/about/" className="text-gray-700 hover:text-brand-700">서비스 소개</Link></li>
           </ul>
@@ -46,7 +46,7 @@ export function SiteFooter() {
           </ul>
         </nav>
         <p className="mt-4 text-xs text-gray-500">
-          © {SITE_NAME}. 변환 결과는 참고용이며 계약·의료·법률·안전과 관련된 판단의 유일한 근거로 사용하지 마세요.
+          © {SITE_NAME}. 계산 결과는 참고용 추정이며 급여·세금·퇴직금 등 법적·재무적 판단의 유일한 근거로 사용하지 마세요. 공식 기준을 확인하지 못한 항목은 '미확인'으로 표시합니다.
         </p>
       </div>
     </footer>

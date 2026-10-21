@@ -6,8 +6,8 @@ import { ADS_ENABLED, ADSENSE_CLIENT, SITE_NAME, SITE_TAGLINE, SITE_URL } from '
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: { default: `${SITE_NAME} - 평·길이·무게·온도·사이즈·Base64·JSON`, template: `%s | ${SITE_NAME}` },
-  description: `${SITE_TAGLINE}. 가입 없이 무료로 사용하고 입력값은 서버로 전송되지 않습니다.`,
+  title: { default: `${SITE_NAME} - 연봉 실수령액·프리랜서 3.3%·퇴직금·수당`, template: `%s | ${SITE_NAME}` },
+  description: `${SITE_TAGLINE}. 가입 없이 무료로 사용하고 입력값은 서버로 전송되지 않으며 공식 확인 상태를 투명하게 표시합니다.`,
   alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
@@ -18,8 +18,6 @@ export const metadata: Metadata = {
     url: '/',
   },
   twitter: { card: 'summary', title: SITE_NAME, description: SITE_TAGLINE },
-  verification : { google : '1bHbH5-Aa-wk74CWkqUWQGRmZ6KMkvRetikjf8rLAnQ' },
-  other : { 'google-adsense-account' : 'ca-pub-4185652173034768' }
 };
 
 export const viewport: Viewport = {

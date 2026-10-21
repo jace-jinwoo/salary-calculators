@@ -1,8 +1,8 @@
-export const SITE_NAME = '단위·규격 변환기';
-export const SITE_TAGLINE = '평·길이·무게·온도·사이즈·Base64·JSON을 브라우저에서 바로 변환';
+export const SITE_NAME = '연봉·실수령액 계산기';
+export const SITE_TAGLINE = '연봉·월급 실수령액, 프리랜서 3.3%, 퇴직금, 연장·야간·휴일수당을 확인된 기준으로 계산';
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://example.netlify.app').replace(/\/+$/, '');
 export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || '';
-export const LAST_UPDATED = '2026-10-17';
+export const LAST_UPDATED = '2026-10-21';
 /** 도구 페이지를 제외한 정적 페이지 경로 (sitemap, 검증 스크립트 공통) */
 export const STATIC_PATHS = ['/', '/about/', '/guide/', '/privacy/', '/terms/', '/contact/'];
 

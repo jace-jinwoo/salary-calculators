@@ -19,7 +19,7 @@ export default function TermsPage() {
 
       <section>
         <h2 className="text-xl font-semibold text-gray-900">1. 서비스의 목적</h2>
-        <p className="mt-2">{SITE_NAME}는 단위 변환, 사이즈 참고표, 개발자용 간단 도구를 무료로 제공합니다.</p>
+        <p className="mt-2">{SITE_NAME}는 연봉·실수령액, 프리랜서 3.3%, 퇴직금, 수당 계산 도구를 무료로 제공합니다. 계산 결과는 참고용 추정이며 법적·세무적 효력이 없습니다.</p>
       </section>
 
       <section>

@@ -12,7 +12,7 @@ export default function ContactPage() {
   return (
     <article className="space-y-6 text-gray-700">
       <h1 className="text-3xl font-bold text-gray-900">문의</h1>
-      <p>오류 제보, 변환 기준에 대한 의견, 기능 제안, 개인정보 관련 문의를 이메일로 보내 주세요.</p>
+      <p>오류 제보, 계산 기준·데이터 오류 제보, 기능 제안, 개인정보 관련 문의를 이메일로 보내 주세요.</p>
 
       <section aria-labelledby="mail-h" className="rounded-lg border border-gray-200 p-4">
         <h2 id="mail-h" className="text-lg font-semibold text-gray-900">이메일</h2>
